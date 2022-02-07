@@ -1,4 +1,38 @@
-"use strict";
+// TEST
+gridMaker(
+    document.querySelector("#grid"),
+    4,
+    6
+  );
+  
+  
+  function createNumberDiv () {
+  
+    // Create each numberDiv
+    let numberDiv = document.createElement("div");
+    numberDiv.innerHTML = randomNumber(100);
+  
+    return numberDiv;
+  
+  }
+  function gridMaker (gridContainer, R, C) {
+  
+    gridContainer.style.gridTemplateRows = `repeat(${R}, 1fr)`;
+    gridContainer.style.gridTemplateColumns = `repeat(${C}, 1fr)`;
+  
+  
+    // WITH ONE LOOP
+    let nTotal = R * C;
+    for (let i = 0; i < nTotal; i++) {
+      gridContainer.appendChild( createNumberDiv() );
+    }
+  
+  }
+  function randomNumber (max) {
+    return Math.floor(max * Math.random());
+  }
+
+  "use strict";
 
 /*
 
@@ -49,6 +83,31 @@ must get its eventListener.
 The only thing the eventListener needs to do (so far) is to toggle the class "selected" from
 the classList.
 
+Modify createNumberDiv so that the numberDivs react to click events. When clicked, a numberDiv
+must toggle the class "selected". So: if it didn't have the class "selected", it must be added
+to the classList. If it did have the class "selected" it must be removed from the classList.
+
+
+
 */
 
+function createNumberDiv () {
 
+  // Create each numberDiv
+  let numberDiv = document.createElement("div");
+  numberDiv.innerHTML = randomNumber(100);
+
+  // The eventListener so that it reacts on click
+  numberDiv.addEventListener("click", function() {
+
+    // Toggle the selected class
+    numberDiv.classList.toggle("selected");
+
+    // Update the results
+    updateResults("selected");
+
+  });
+
+  return numberDiv;
+
+}

@@ -6,8 +6,7 @@ body {
   }
   
   * {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-family: 'Poiret One', cursive;
+    font: 20px "Roboto Condensed";
   }
   
   #top > div {
@@ -15,7 +14,6 @@ body {
     flex-basis: 6vh;
     margin: 2vh;
     justify-content: center;
-    padding: 10px;
   }
   
   #top > div > div {
@@ -32,11 +30,10 @@ body {
     flex-grow: 1;
     display: grid;
     gap: 1vh;
-    padding: 10px;
   
     font-size: 3vh;
   
-    border: 1px solid rgb(202, 119, 174);
+    border: 1px solid grey;
   
     font: 25px "Supermercado One";
   }
@@ -46,11 +43,11 @@ body {
     justify-content: center;
     align-items: center;
   
-    background-color: rgb(219, 109, 109);
+    background-color: grey;
   }
   
   #grid > div.selected {
-    background-color: rgb(241, 158, 158);
+    background-color: rgb(231, 162, 165);
     color: navy;
   }
   

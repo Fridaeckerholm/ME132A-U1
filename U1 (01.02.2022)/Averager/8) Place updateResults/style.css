@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  * {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Poiret One', cursive;
+  }
+  
+  #top > div {
+    display: flex;
+    flex-basis: 6vh;
+    margin: 2vh;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  #top > div > div {
+    margin: 0px 2vh;
+  }
+  
+  #results span {
+    font-weight: bolder;
+  }
+  
+  #grid {
+    margin: 2vh;
+    padding: 1vh;
+    flex-grow: 1;
+    display: grid;
+    gap: 1vh;
+    padding: 10px;
+  
+    font-size: 3vh;
+  
+    border: 1px solid rgb(202, 119, 174);
+  
+    font: 25px "Supermercado One";
+  }
+  
+  #grid > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: rgb(219, 109, 109);
+  }
+  
+  #grid > div.selected {
+    background-color: rgb(241, 158, 158);
+    color: navy;
+  }
+  
+  #grid > div:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+  }
