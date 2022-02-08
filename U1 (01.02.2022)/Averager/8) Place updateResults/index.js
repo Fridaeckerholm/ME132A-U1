@@ -1,3 +1,6 @@
+// Link to Github
+https://github.com/Fridaeckerholm/ME132A-U1.git
+//
 "use strict";
 
 function gridMaker (gridContainer, R, C) {
@@ -117,4 +120,5 @@ function updateResults (className) {
 
 console.log( [1,3,4,10,0,1].join() );
 console.log( [1,3,4,10,0,1].join(" - ") );
+
 
