@@ -1,6 +1,4 @@
-// Link to Github
-https://github.com/Fridaeckerholm/ME132A-U1.git
-//
+
 "use strict";
 
 function gridMaker (gridContainer, R, C) {
@@ -11,10 +9,11 @@ function gridMaker (gridContainer, R, C) {
 
   gridContainer.innerHTML = "";
 
-  document.querySelector("#selected span").innerHTML = "";
   document.querySelector("#amount span").innerHTML = "";
-  document.querySelector("#sum span").innerHTML = "";
   document.querySelector("#average span").innerHTML = "";
+  document.querySelector("#selected span").innerHTML = "";
+  document.querySelector("#sum span").innerHTML = "";
+  
 
   for ( let i = 0; i < C; i++ ) {
           for ( let ii = 0; ii < R; ii++ ) {

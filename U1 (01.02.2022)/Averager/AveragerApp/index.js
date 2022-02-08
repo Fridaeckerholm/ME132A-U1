@@ -1,3 +1,7 @@
+// Link to Github
+https://github.com/Fridaeckerholm/ME132A-U1.git
+//
+
 "use strict";
 
 // Program the complete Averager App here.
