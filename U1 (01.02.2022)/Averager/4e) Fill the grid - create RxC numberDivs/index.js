@@ -52,14 +52,19 @@ function gridMaker (gridContainer, R, C) {
   //   }
 
   // }
-
-
   // WITH ONE LOOP
   let nTotal = R * C;
   for (let i = 0; i < nTotal; i++) {
     gridContainer.appendChild( createNumberDiv() );
   }
 
+  for (let c = 0; c < C; c++) {
+    for (let r = 0; r < R; r++) {
+      gridContainer.appendChild( createNumberDiv () );
+    }
+  }
+
+  
 }
 function randomNumber (max) {
   return Math.floor(max * Math.random());

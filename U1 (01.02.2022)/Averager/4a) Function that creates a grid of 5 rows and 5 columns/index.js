@@ -9,7 +9,7 @@ in your JS-file from the console. Check the video.
 
 */
 
-function testConsole (p1) {
+function F25 (p1) {
   document.querySelector("body").style.backgroundColor = p1;
 }
 
